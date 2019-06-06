@@ -6,9 +6,43 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Celebrity Dating</title>
   </head>
   <body>
+    <div class="container">
+      <form id="aboutMe">
+
+        <div class="form-group">
+          <label for="age">Your Age</label>
+          <input id="age" type="number">
+        </div>
+
+        <div class="form-group">
+          <label for="gender">
+          <select id="gender">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="favMusic">
+          <radio id="favMusic">
+            <option value="Classical">Classical</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Rock and Roll">Rock and Roll</option>
+            <option value="Country">Country</option>
+          </radio>
+        </div>
+        <button type="submit" class="btn btn-warning">Find my celebrity match!</button>
+      </form>
+
+      <div id="yourMatch">
+        <h2>Here is your match!</h2>
+      </div>
+    </div>
 
   </body>
 </html>
